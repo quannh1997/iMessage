@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="KGk-i7-Jjw" customClass="ReceivedMessageTableViewCell" customModule="iMessage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-XK-3bS">
+                        <rect key="frame" x="20" y="10" width="239" height="202"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-gN-WXQ">
+                                <rect key="frame" x="0.0" y="0.0" width="239" height="102"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQK-pR-YAU">
+                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="102"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gek-hv-vEV">
+                                                <rect key="frame" x="15" y="15" width="41.5" height="72"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="gek-hv-vEV" secondAttribute="bottom" constant="15" id="4s9-mt-ajm"/>
+                                            <constraint firstAttribute="trailing" secondItem="gek-hv-vEV" secondAttribute="trailing" constant="15" id="FyQ-9l-b5P"/>
+                                            <constraint firstItem="gek-hv-vEV" firstAttribute="top" secondItem="xQK-pR-YAU" secondAttribute="top" constant="15" id="GUv-yf-2gf"/>
+                                            <constraint firstItem="gek-hv-vEV" firstAttribute="leading" secondItem="xQK-pR-YAU" secondAttribute="leading" constant="15" id="xpe-mv-3RX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xQK-pR-YAU" secondAttribute="trailing" id="AMw-Z9-Dif"/>
+                                    <constraint firstAttribute="bottom" secondItem="xQK-pR-YAU" secondAttribute="bottom" id="GZW-5W-XnZ"/>
+                                    <constraint firstItem="xQK-pR-YAU" firstAttribute="top" secondItem="cGE-gN-WXQ" secondAttribute="top" id="jNj-AE-b4o"/>
+                                    <constraint firstItem="xQK-pR-YAU" firstAttribute="leading" secondItem="cGE-gN-WXQ" secondAttribute="leading" id="zn1-dr-Qjn"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yln-57-UdR">
+                                <rect key="frame" x="0.0" y="102" width="239" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="htQ-XK-3bS" secondAttribute="bottom" constant="10" id="Hp8-zi-F1r"/>
+                    <constraint firstAttribute="trailing" secondItem="htQ-XK-3bS" secondAttribute="trailing" constant="100" id="PFr-oY-TpX"/>
+                    <constraint firstItem="htQ-XK-3bS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bhr-0F-0l7"/>
+                    <constraint firstItem="htQ-XK-3bS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pit-6V-dk0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageBackgroundView" destination="xQK-pR-YAU" id="4Uf-8c-PSw"/>
+                <outlet property="messageImageView" destination="Yln-57-UdR" id="f4x-a5-dec"/>
+                <outlet property="messageLabel" destination="gek-hv-vEV" id="MHq-FR-Zgz"/>
+            </connections>
+            <point key="canvasLocation" x="-113.768115942029" y="-1.3392857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

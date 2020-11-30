@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V4s-Z7-wL7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User List View Controller-->
+        <scene sceneID="ot9-ai-FSZ">
+            <objects>
+                <viewController storyboardIdentifier="UserListViewController" id="V4s-Z7-wL7" customClass="UserListViewController" customModule="iMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URl-pO-yW3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wHp-7p-pxn">
+                                <rect key="frame" x="0.0" y="209.5" width="414" height="652.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pym-lZ-rIu">
+                                <rect key="frame" x="35" y="74" width="264" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPt-Pa-ntt">
+                                <rect key="frame" x="35" y="113" width="264" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholder="Search by name" translatesAutoresizingMaskIntoConstraints="NO" id="uux-SN-RIN">
+                                <rect key="frame" x="30" y="149.5" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4qS-Qh-LAw"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bay-iT-wdm">
+                                <rect key="frame" x="319" y="67" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Z7T-ku-oqn"/>
+                                    <constraint firstAttribute="height" constant="40" id="gcb-Vx-MAx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Logout"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d0S-Ra-Kv9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wHp-7p-pxn" firstAttribute="leading" secondItem="d0S-Ra-Kv9" secondAttribute="leading" id="1Du-sy-xgx"/>
+                            <constraint firstItem="bay-iT-wdm" firstAttribute="firstBaseline" secondItem="pym-lZ-rIu" secondAttribute="firstBaseline" id="8c3-Ru-DOt"/>
+                            <constraint firstItem="uux-SN-RIN" firstAttribute="top" secondItem="bPt-Pa-ntt" secondAttribute="bottom" constant="15" id="La9-VR-BvD"/>
+                            <constraint firstItem="pym-lZ-rIu" firstAttribute="top" secondItem="d0S-Ra-Kv9" secondAttribute="top" constant="30" id="R7N-Dz-MZ2"/>
+                            <constraint firstItem="uux-SN-RIN" firstAttribute="leading" secondItem="d0S-Ra-Kv9" secondAttribute="leading" constant="30" id="SJg-RO-uH6"/>
+                            <constraint firstItem="bPt-Pa-ntt" firstAttribute="leading" secondItem="pym-lZ-rIu" secondAttribute="leading" id="X2h-jm-puD"/>
+                            <constraint firstItem="d0S-Ra-Kv9" firstAttribute="trailing" secondItem="bay-iT-wdm" secondAttribute="trailing" constant="35" id="Y1F-wC-9eS"/>
+                            <constraint firstItem="pym-lZ-rIu" firstAttribute="leading" secondItem="d0S-Ra-Kv9" secondAttribute="leading" constant="35" id="aq1-rC-gVG"/>
+                            <constraint firstItem="bPt-Pa-ntt" firstAttribute="trailing" secondItem="pym-lZ-rIu" secondAttribute="trailing" id="dQs-tA-jSP"/>
+                            <constraint firstItem="d0S-Ra-Kv9" firstAttribute="trailing" secondItem="uux-SN-RIN" secondAttribute="trailing" constant="30" id="f6s-3s-1Bw"/>
+                            <constraint firstItem="bPt-Pa-ntt" firstAttribute="top" secondItem="pym-lZ-rIu" secondAttribute="bottom" constant="15" id="gOV-tK-Gs8"/>
+                            <constraint firstItem="d0S-Ra-Kv9" firstAttribute="trailing" secondItem="wHp-7p-pxn" secondAttribute="trailing" id="hC8-ke-lcR"/>
+                            <constraint firstItem="wHp-7p-pxn" firstAttribute="top" secondItem="uux-SN-RIN" secondAttribute="bottom" constant="10" id="nC7-Dw-dpW"/>
+                            <constraint firstItem="d0S-Ra-Kv9" firstAttribute="bottom" secondItem="wHp-7p-pxn" secondAttribute="bottom" id="snr-oB-cVe"/>
+                            <constraint firstItem="bay-iT-wdm" firstAttribute="leading" secondItem="pym-lZ-rIu" secondAttribute="trailing" constant="20" id="xOQ-LX-8hE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X1T-Ak-zWr"/>
+                    <connections>
+                        <outlet property="currentUsernameLabel" destination="pym-lZ-rIu" id="6nr-ry-HEN"/>
+                        <outlet property="logoutButton" destination="bay-iT-wdm" id="cDW-xV-OLl"/>
+                        <outlet property="searchBar" destination="uux-SN-RIN" id="LJT-Kg-yNt"/>
+                        <outlet property="tableView" destination="wHp-7p-pxn" id="hIX-Ph-dZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgz-fq-qa1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086.9565217391305" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
