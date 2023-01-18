@@ -81,6 +81,7 @@ class MessageViewController: BaseViewController {
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         setupTapGesture()
         addKeyboardNotification()
+        // comment
     }
     
     deinit {
